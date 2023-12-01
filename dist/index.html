@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Test</title>
+<script type='text/javascript' src='bundle.js' defer></script>
+<style>
+body { background-color: #ffc000; }
+</style>
+<body>
+<h1>Firebase Test</h1>
+
+
+<h2>Signup</h2>
+<div>
+Email:</br/>
+<input id="email" /><br />
+Password:<br />
+<input id="password" type="password" /><br />
+Name:<br />
+<input id="displayName" /><br />
+<input type="button" id="btnSignup" value="Go!" /><br />
+<div id='signupResults'></div>
+</div>
+
+
+<h2>Login</h2>
+<div>
+Email:</br/>
+<input id="email2" /><br />
+Password:<br />
+<input id="password2" type="password" /><br />
+<input type="button" id="btnLogin" value="Go!" /><br />
+<div id='loginResults'></div>
+</div>
+
+
+<div>
+<input type="button" id="btnLogout" value="Logout!" style="display: none" /><br />
+</div>
+
+
+<div id="firestore" style="display: none">
+
+<h2>Add song</h2>
+Title:<br />
+<input id="title" /><br />
+Artist:<br />
+<input id="artist" /><br />
+Year:<br />
+<input id="year" /><br />
+<input id="btnAddSong" type="button" value="Add Song!" />
+
+
+<h2>Update song</h2>
+ID:<br />
+<input id="id" /><br/>
+Title:<br />
+<input id="title3" /><br />
+Artist:<br />
+<input id="artist3" /><br />
+Year:<br />
+<input id="year3" /><br />
+Action:
+<select id="action">
+<option>update</option>
+<option>delete</option>
+</select>
+<input id="btnUpdateSong" type="button" value="Update Song!" />
+</div>
+
+
+<div>
+Search: <input id='searchArtist' />
+<input id='btnSearch' type="button" value="Search!" />
+</div>
+
+
+<div id="searchresults"></div>
+
+
+</body>
+</html>
