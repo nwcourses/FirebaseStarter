@@ -11,7 +11,8 @@ body { background-color: #ffc000; }
 
 
 <h2>Signup</h2>
-<div>
+
+<div id='signup'`>
 Email:</br/>
 <input id="email" /><br />
 Password:<br />
@@ -24,21 +25,26 @@ Name:<br />
 
 
 <h2>Login</h2>
-<div>
+
+<div id='login'>
+
 Email:</br/>
 <input id="email2" /><br />
 Password:<br />
 <input id="password2" type="password" /><br />
 <input type="button" id="btnLogin" value="Go!" /><br />
 <div id='loginResults'></div>
+
 </div>
 
 
-<div>
+<div id='logout'>
 <input type="button" id="btnLogout" value="Logout!" style="display: none" /><br />
 </div>
 
 
+<!-- "firestore" div contains "write" operations which should be hidden if the
+     user isn't currently logged in. -->
 <div id="firestore" style="display: none">
 
 <h2>Add song</h2>
@@ -66,7 +72,8 @@ Action:
 <option>delete</option>
 </select>
 <input id="btnUpdateSong" type="button" value="Update Song!" />
-</div>
+
+</div> <!-- end "firestore" div -->
 
 
 <div>
