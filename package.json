@@ -1,13 +1,10 @@
 {
   "dependencies": {
-    "firebase": "^10.7.0"
-  },
-  "devDependencies": {
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "firebase": "^11.0.2",
+    "vite": "^6.0.1"
   },
   "scripts": {
-    "dev": "webpack --mode=development",
-    "start": "webpack serve --open --mode=development"
+    "dev": "npx vite dev",
+    "build": "npx vite build"
   }
 }

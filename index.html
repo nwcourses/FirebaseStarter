@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Firebase Test</title>
-<script type='text/javascript' src='bundle.js' defer></script>
+<script type='module' src='src/main.mjs'></script>
 <style>
 body { background-color: #ffc000; }
 </style>
@@ -12,8 +12,8 @@ body { background-color: #ffc000; }
 
 <h2>Signup</h2>
 
-<div id='signup'`>
-Email:</br/>
+<div id='signup'>
+Email:<br/>
 <input id="email" /><br />
 Password:<br />
 <input id="password" type="password" /><br />
@@ -24,28 +24,31 @@ Name:<br />
 </div>
 
 
-<h2>Login</h2>
 
+
+<h2 id='loginMsg'>Login</h2>
 <div id='login'>
-
-Email:</br/>
+Email:<br/>
 <input id="email2" /><br />
 Password:<br />
 <input id="password2" type="password" /><br />
 <input type="button" id="btnLogin" value="Go!" /><br />
 <div id='loginResults'></div>
-
 </div>
+
 
 
 <div id='logout'>
 <input type="button" id="btnLogout" value="Logout!" style="display: none" /><br />
+<div id='logoutResults'></div>
 </div>
+
 
 
 <!-- "firestore" div contains "write" operations which should be hidden if the
      user isn't currently logged in. -->
 <div id="firestore" style="display: none">
+
 
 <h2>Add song</h2>
 Title:<br />
@@ -55,23 +58,25 @@ Artist:<br />
 Year:<br />
 <input id="year" /><br />
 <input id="btnAddSong" type="button" value="Add Song!" />
+<div id='addResults'></div>
 
 
 <h2>Update song</h2>
 ID:<br />
 <input id="id" /><br/>
 Title:<br />
-<input id="title3" /><br />
+<input id="title2" /><br />
 Artist:<br />
-<input id="artist3" /><br />
+<input id="artist2" /><br />
 Year:<br />
-<input id="year3" /><br />
+<input id="year2" /><br />
 Action:
 <select id="action">
 <option>update</option>
 <option>delete</option>
 </select>
 <input id="btnUpdateSong" type="button" value="Update Song!" />
+<div id='updateResults'></div>
 
 </div> <!-- end "firestore" div -->
 
